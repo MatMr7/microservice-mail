@@ -1,6 +1,7 @@
 <?php
 
 use App\Jobs\CompanyCreated;
+use App\Jobs\EvaluationCreated;
 use App\Mail\CompanyCreatedWelcome;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
@@ -21,5 +22,6 @@ Route::get('/', function () {
 });
 
 Route::get('/teste', function () {
-    CompanyCreated::dispatch('matheuzinhogostoso@mail')->onQueue('queue_mail');
+    EvaluationCreated::dispatch('teteutotoso@mail')->onQueue('queue_mail');
+    //CompanyCreated::dispatch('matheuzinhogostoso@mail')->onQueue('queue_mail');
 });

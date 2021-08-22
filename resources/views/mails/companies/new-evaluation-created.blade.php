@@ -1,7 +1,7 @@
 @component('mail::message')
 # Olá!
 
-Seja muito bem vindo ao sistema
+Uma nova avaliação foi cadastrada.
 
 Obrigado,<br>
 @endcomponent
